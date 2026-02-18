@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse the complete Cult of Psyche episode archive. 800+ episodes of consciousness exploration, tarot, and occult philosophy.">
+    <title>Episodes — Cult of Psyche Archive</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="/" class="site-nav__logo">CULT OF PSYCHE</a>
+            <div class="site-nav__links">
+                <a href="/episodes/" class="active">Episodes</a>
+                <a href="/wiki/people/">People</a>
+                <a href="/wiki/lore/">Lore</a>
+                <a href="/wiki/tarot/">Tarot</a>
+                <a href="/wiki/rules/">Rules</a>
+                <a href="/wiki/tools/">Tools</a>
+                <a href="/search/">Search</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="/">Home</a> <span>&rsaquo;</span> Episodes
+        </div>
+
+        <header class="page-header">
+            <h1>Episode Archive</h1>
+            <div class="page-header__subtitle">Every stream. Every teaching. Every moment.</div>
+            <div class="page-header__description">
+                Browse 800+ episodes of Cult of Psyche. Each entry includes summaries, guest appearances, key topics, and memorable quotes.
+            </div>
+        </header>
+
+        <div class="search-container">
+            <input type="text" class="search-input" id="episodeSearch" placeholder="Search episodes by title, guest, or topic..." oninput="filterEpisodes()">
+        </div>
+
+        <div class="section">
+            <h2>Filter by Era</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px;">
+                <span class="tag" onclick="filterByEra('all')" style="cursor:pointer;">All Episodes</span>
+                <span class="tag" onclick="filterByEra('2024')" style="cursor:pointer;">2024</span>
+                <span class="tag" onclick="filterByEra('2023')" style="cursor:pointer;">2023</span>
+                <span class="tag" onclick="filterByEra('2022')" style="cursor:pointer;">2022</span>
+                <span class="tag" onclick="filterByEra('2021')" style="cursor:pointer;">2021</span>
+                <span class="tag" onclick="filterByEra('earlier')" style="cursor:pointer;">Earlier</span>
+                <span class="tag tag--cyan" onclick="filterByEra('lost')" style="cursor:pointer;">Lost Episodes</span>
+            </div>
+        </div>
+
+        <div id="episodeList">
+            <!-- SAMPLE EPISODES — will be replaced with full data -->
+
+            <div class="card" data-era="2024" data-searchable="cult of psyche episode 800 milestone eight hundred tarot consciousness">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <h3><a href="/episodes/ep800/" style="color: var(--accent-gold);">EP 800 — The Milestone</a></h3>
+                    <span class="status status--published">Published</span>
+                </div>
+                <div class="episode-meta">
+                    <div><strong>Date:</strong> 2024</div>
+                    <div><strong>Duration:</strong> ~2.5 hrs</div>
+                    <div><strong>Platform:</strong> YouTube</div>
+                </div>
+                <p style="margin: 10px 0;">The 800th episode. A reflection on the journey so far, the community built, and the road ahead. Psyche looks back on years of streaming and the evolution of the cult.</p>
+                <div style="margin-top: 10px;">
+                    <span class="tag">milestone</span>
+                    <span class="tag">reflection</span>
+                    <span class="tag">community</span>
+                </div>
+            </div>
+
+            <div class="card" data-era="2024" data-searchable="tarot deep dive major arcana reading consciousness psyche">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <h3><a href="/episodes/ep799/" style="color: var(--accent-gold);">EP 799 — Tarot Deep Dive: The Major Arcana</a></h3>
+                    <span class="status status--published">Published</span>
+                </div>
+                <div class="episode-meta">
+                    <div><strong>Date:</strong> 2024</div>
+                    <div><strong>Duration:</strong> ~3 hrs</div>
+                    <div><strong>Platform:</strong> YouTube</div>
+                </div>
+                <p style="margin: 10px 0;">A comprehensive exploration of the Major Arcana. Card-by-card analysis with live readings and community discussion on archetypal symbolism.</p>
+                <div style="margin-top: 10px;">
+                    <span class="tag">tarot</span>
+                    <span class="tag">major arcana</span>
+                    <span class="tag">readings</span>
+                    <span class="tag">archetypes</span>
+                </div>
+            </div>
+
+            <div class="card" data-era="2023" data-searchable="guest night community voices panel discussion 2023">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <h3><a href="/episodes/ep650/" style="color: var(--accent-gold);">EP 650 — Guest Night: Community Voices</a></h3>
+                    <span class="status status--published">Published</span>
+                </div>
+                <div class="episode-meta">
+                    <div><strong>Date:</strong> 2023</div>
+                    <div><strong>Duration:</strong> ~2 hrs</div>
+                    <div><strong>Platform:</strong> YouTube</div>
+                </div>
+                <p style="margin: 10px 0;">Multiple community members join Psyche for a panel discussion on consciousness, spirituality, and what the cult means to them.</p>
+                <div style="margin-top: 10px;">
+                    <span class="tag">guests</span>
+                    <span class="tag">community</span>
+                    <span class="tag">panel</span>
+                </div>
+            </div>
+
+            <div class="card" data-era="2022" data-searchable="occult philosophy hermeticism esoteric 2022">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <h3><a href="/episodes/ep400/" style="color: var(--accent-gold);">EP 400 — Occult Philosophy: Hermeticism</a></h3>
+                    <span class="status status--published">Published</span>
+                </div>
+                <div class="episode-meta">
+                    <div><strong>Date:</strong> 2022</div>
+                    <div><strong>Duration:</strong> ~2.5 hrs</div>
+                    <div><strong>Platform:</strong> YouTube</div>
+                </div>
+                <p style="margin: 10px 0;">An exploration of Hermetic principles and their application to modern consciousness work. The seven principles, the Kybalion, and living alchemy.</p>
+                <div style="margin-top: 10px;">
+                    <span class="tag">occult</span>
+                    <span class="tag">hermeticism</span>
+                    <span class="tag">philosophy</span>
+                    <span class="tag">kybalion</span>
+                </div>
+            </div>
+
+            <div class="card" data-era="lost" data-searchable="lost episode rumble recovered early stream">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <h3>Lost Episode — Early Stream (Rumble Recovery)</h3>
+                    <span class="status status--tbd">Recovery TBD</span>
+                </div>
+                <div class="episode-meta">
+                    <div><strong>Date:</strong> Unknown</div>
+                    <div><strong>Platform:</strong> Rumble</div>
+                </div>
+                <p style="margin: 10px 0;">One of many early episodes that may be recoverable from the Rumble archive. Status: pending recovery and cataloguing.</p>
+                <div style="margin-top: 10px;">
+                    <span class="tag tag--cyan">lost episode</span>
+                    <span class="tag tag--cyan">recovery</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" style="text-align: center; margin-top: 40px;">
+            <h2>Archive Status</h2>
+            <p style="color: var(--text-muted); margin: 15px 0;">
+                The full episode catalogue is being built. As episodes are processed, they will appear here with summaries, guest info, timestamps, and searchable transcripts.
+            </p>
+            <p style="color: var(--accent-cyan);">
+                800+ episodes to catalogue. The work continues.
+            </p>
+        </div>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Cult of Psyche. All episodes preserved and searchable.</p>
+            <p style="margin-top: 15px;">
+                <a href="https://youtube.com/cultofpsyche">YouTube</a> |
+                <a href="/">Home</a> |
+                <a href="/about/">About</a> |
+                <a href="/search/">Search</a>
+            </p>
+            <p class="site-footer__tagline">
+                The priestess is watching. The builder is manifesting. The father is leading.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+    function filterEpisodes() {
+        const query = document.getElementById('episodeSearch').value.toLowerCase();
+        document.querySelectorAll('#episodeList .card').forEach(card => {
+            const searchable = (card.dataset.searchable || '').toLowerCase() + ' ' + card.textContent.toLowerCase();
+            card.style.display = searchable.includes(query) ? '' : 'none';
+        });
+    }
+
+    function filterByEra(era) {
+        document.querySelectorAll('#episodeList .card').forEach(card => {
+            if (era === 'all') {
+                card.style.display = '';
+            } else {
+                card.style.display = card.dataset.era === era ? '' : 'none';
+            }
+        });
+    }
+    </script>
+</body>
+</html>

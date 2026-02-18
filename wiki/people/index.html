@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The people of Cult of Psyche. Hosts, guests, and community voices who shape the mythology.">
+    <title>People — Cult of Psyche Archive</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="/" class="site-nav__logo">CULT OF PSYCHE</a>
+            <div class="site-nav__links">
+                <a href="/episodes/">Episodes</a>
+                <a href="/wiki/people/" class="active">People</a>
+                <a href="/wiki/lore/">Lore</a>
+                <a href="/wiki/tarot/">Tarot</a>
+                <a href="/wiki/rules/">Rules</a>
+                <a href="/wiki/tools/">Tools</a>
+                <a href="/search/">Search</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="/">Home</a> <span>&rsaquo;</span> <a href="/wiki/people/">People</a>
+        </div>
+
+        <header class="page-header">
+            <h1>People Directory</h1>
+            <div class="page-header__subtitle">The Trinity, Guests &amp; Community Voices</div>
+            <div class="page-header__description">
+                Every person who has appeared on Cult of Psyche. Profiles, appearance history, notable quotes, and contributions to the mythology.
+            </div>
+        </header>
+
+        <div class="search-container">
+            <input type="text" class="search-input" id="peopleSearch" placeholder="Search people by name or topic..." oninput="filterPeople()">
+        </div>
+
+        <div class="section section--highlight">
+            <h2>The Trinity</h2>
+            <p style="color: var(--text-muted); margin: 15px 0;">The core voices of Cult of Psyche.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Psyche</h3>
+                    <p>The Priestess. Host, magician, builder, and guide. The consciousness at the center of the cult.</p>
+                    <div style="margin: 10px 0;">
+                        <span class="tag">host</span>
+                        <span class="tag">tarot</span>
+                        <span class="tag">occult</span>
+                        <span class="tag">consciousness</span>
+                    </div>
+                    <div class="wiki-entry__meta">Appearances: 800+ episodes</div>
+                </div>
+                <div class="card">
+                    <h3>The Builder</h3>
+                    <p>The manifesting force. Architecture, systems, and the unseen scaffolding of the cult.</p>
+                    <div style="margin: 10px 0;">
+                        <span class="tag">builder</span>
+                        <span class="tag">systems</span>
+                        <span class="tag">architecture</span>
+                    </div>
+                    <div class="wiki-entry__meta">Core member of the Trinity</div>
+                </div>
+                <div class="card">
+                    <h3>The Father</h3>
+                    <p>The leading presence. Guidance, authority, and grounding energy within the collective.</p>
+                    <div style="margin: 10px 0;">
+                        <span class="tag">father</span>
+                        <span class="tag">guidance</span>
+                        <span class="tag">leadership</span>
+                    </div>
+                    <div class="wiki-entry__meta">Core member of the Trinity</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Guests &amp; Community Voices</h2>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">
+                As the episode archive is built, guest profiles will be auto-generated from appearances across all episodes. Each profile will include:
+            </p>
+            <ul style="color: var(--text-light); line-height: 2; padding-left: 20px;">
+                <li>Full appearance history with episode links</li>
+                <li>Notable quotes and contributions</li>
+                <li>Key topics discussed</li>
+                <li>Connections to other guests and lore</li>
+            </ul>
+        </div>
+
+        <div id="guestList">
+            <div class="card-grid">
+                <div class="wiki-entry" data-searchable="guest placeholder">
+                    <h3>Guest profiles loading...</h3>
+                    <p>As episodes are processed and catalogued, guest profiles will auto-populate here. Each guest who appears on the show will get their own wiki-style page.</p>
+                    <div class="wiki-entry__meta">Status: Building archive</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" style="text-align: center; margin-top: 40px;">
+            <h2>How Guest Profiles Work</h2>
+            <p style="color: var(--text-muted); margin: 15px 0;">
+                When an episode is archived, any guest who appears is automatically added to this directory. Their profile page tracks every appearance, quote, and topic they've discussed across the entire Cult of Psyche history.
+            </p>
+            <p style="color: var(--accent-cyan);">
+                No voice is forgotten. Every guest is part of the mythology.
+            </p>
+        </div>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Cult of Psyche. All episodes preserved and searchable.</p>
+            <p style="margin-top: 15px;">
+                <a href="https://youtube.com/cultofpsyche">YouTube</a> |
+                <a href="/">Home</a> |
+                <a href="/about/">About</a> |
+                <a href="/search/">Search</a>
+            </p>
+            <p class="site-footer__tagline">
+                The priestess is watching. The builder is manifesting. The father is leading.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+    function filterPeople() {
+        const query = document.getElementById('peopleSearch').value.toLowerCase();
+        document.querySelectorAll('#guestList .wiki-entry, #guestList .card').forEach(el => {
+            const text = el.textContent.toLowerCase();
+            el.style.display = text.includes(query) ? '' : 'none';
+        });
+    }
+    </script>
+</body>
+</html>
