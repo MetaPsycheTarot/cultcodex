@@ -21,12 +21,47 @@
     <!-- Favicon placeholder -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🜏</text></svg>" />
 
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Cult of Psyche — The Library",
+      "url": "https://cultcodex.me",
+      "description": "The Library of the Cult of Psyche. Codex, rituals, doctrine, and the living archive of an ethical occult entertainment community.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cult of Psyche",
+        "url": "https://cultofpsyche.com",
+        "sameAs": [
+          "https://psycheverse.org",
+          "https://cultcodex.me"
+        ]
+      }
+    }
+    </script>
+
+    <!-- Google Analytics (replace G-XXXXXXXXXX with your GA4 Measurement ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+
     <!-- App -->
     <script type="module" crossorigin src="./assets/index-BNQ_Gt-y.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DZRsb-KX.css">
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Cross-site navigation bar -->
+    <div id="ecosystem-bar" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(11,11,16,0.95);backdrop-filter:blur(8px);border-top:1px solid rgba(201,164,92,0.2);padding:8px 16px;display:flex;justify-content:center;align-items:center;gap:24px;font-family:'Georgia',serif;font-size:12px;">
+      <span style="color:#C9A45C;font-weight:bold;letter-spacing:2px;text-transform:uppercase;">🜏 The Circle</span>
+      <a href="https://cultcodex.me" style="color:#ffd700;text-decoration:none;font-weight:bold;">The Library</a>
+      <span style="color:rgba(244,241,234,0.3);">|</span>
+      <a href="https://psycheverse.org" style="color:#0EE6B7;text-decoration:none;" target="_blank" rel="noopener noreferrer">The World</a>
+      <span style="color:rgba(244,241,234,0.3);">|</span>
+      <a href="https://cultofpsyche.com" style="color:#7A5CFF;text-decoration:none;" target="_blank" rel="noopener noreferrer">The Gateway</a>
+    </div>
+
     <noscript>
       <div style="background:#0B0B10;color:#F4F1EA;text-align:center;padding:4rem;font-family:serif;">
         <h1 style="font-size:2rem;color:#C9A45C;">Cult of Psyche</h1>
